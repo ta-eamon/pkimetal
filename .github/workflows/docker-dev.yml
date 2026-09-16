@@ -22,6 +22,8 @@ permissions:
 
 jobs:
   build:
+    # Container publishing is maintained by upstream, not contributor forks.
+    if: github.repository == 'pkimetal/pkimetal'
     runs-on: ubuntu-latest
     permissions:
       contents: read

@@ -12,6 +12,8 @@ on:
   
 jobs:
   check_release:
+    # Dependency automation is maintained by upstream, not by contributor forks.
+    if: github.repository == 'pkimetal/pkimetal'
     runs-on: ubuntu-latest
     name: Hourly check for dependency updates
     permissions:
